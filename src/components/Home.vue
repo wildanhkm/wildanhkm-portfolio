@@ -1,9 +1,9 @@
 <template>
-  <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="pt-5 p-st">
+  <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="py-5 p-st">
     <div class="container" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
-      <div class="row align-items-center">
+      <div class="row align-items-center py-3">
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
-          <!-- <img :src="picture" /> -->
+          <!-- <img :src="picture" class="rounded-circle w-50" /> -->
         </div>
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5">
           <span class="home-title" :class="{ pgray: !nightMode, 'text-light': nightMode }">Welcome to my portfolio!</span>

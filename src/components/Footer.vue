@@ -17,7 +17,7 @@
             <a class="btn btn-outline-secondary mx-2" href="https://github.com/wildanhkm" target="_blank" rel="noreferrer noopener" v-tooltip.bottom="'GitHub'">
               <i class="fab fa-github"></i>
             </a>
-            <a class="btn btn-outline-secondary mx-2" href="https://drive.google.com/file/d/1W0pzOo1Gb-W70BYKehOfZ4qaJt7m1_7O/view?usp=sharing" target="_blank" rel="noreferrer noopener" v-tooltip.bottom="'Resume'">
+            <a class="btn btn-outline-secondary mx-2" href="https://drive.google.com/file/d/1t1Z1qpcP8-LCLE-JWWAgjwZNcGrt5DZ6/view?usp=sharing" target="_blank" rel="noreferrer noopener" v-tooltip.bottom="'Resume'">
               <i class="fa fa-file"></i>
             </a>
           </div>

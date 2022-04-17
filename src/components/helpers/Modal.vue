@@ -61,9 +61,6 @@
               class="mt-1 mb-3"
               :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
             />
-            <button class="btn w-25 mr-3" @click="open(portfolio.github)">
-              github
-            </button>
             <button class="btn w-25" @click="$emit('close')">close</button>
           </div>
         </div>
@@ -73,13 +70,13 @@
 </template>
 
 <script>
-import Carousel from "./Carousel";
+// import Carousel from "./Carousel";
 import Gallery from "./Gallery";
 
 export default {
   name: "Modal",
   components: {
-    Carousel,
+    // Carousel,
     Gallery,
   },
   props: {
@@ -95,11 +92,6 @@ export default {
   },
   created() {
     document.getElementsByTagName("body")[0].classList.add("modal-open");
-  },
-  methods: {
-    open(url) {
-      window.open(url, "_blank");
-    },
   },
 };
 </script>

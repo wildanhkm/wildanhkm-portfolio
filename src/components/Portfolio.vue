@@ -8,98 +8,16 @@
     }"
   >
     <div class="container">
-      <div
-        class="text-center"
-        data-aos="fade"
-        data-aos-once="true"
-        data-aos-duration="1000"
-      >
-        <span
-          class="title text-center"
-          :class="{ pgray: !nightMode, 'text-light': nightMode }"
-          >Portfolio</span
-        >
+      <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
+        <span class="title text-center" :class="{ pgray: !nightMode, 'text-light': nightMode }">Portfolio</span>
       </div>
-      <hr
-        width="50%"
-        :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
-      />
+      <hr width="50%" :class="{ pgray: !nightMode, 'bg-secondary': nightMode }" />
 
       <vue-tabs :activeTextColor="!nightMode ? '#535A5E' : '#dfdfdf'">
-      <v-tab title="design">
-          <div class="row">
-            <div
-              v-for="(design, idx) in desgin_info"
-              :key="idx"
-              :class="{ 'mt-4': idx === 0 ? true : true }"
-              class="col-xl-6 col-bg-6 col-md-12 col-sm-12"
-              style="position: relative;"
-            >
-              <vueper-slides
-                :dragging-distance="50"
-                fixed-height="300px"
-                :bullets="false"
-                slide-content-outside="bottom"
-                style="position: aboslute"
-                  @click.prevent="showDesignModalFn(design)"
-
-              >
-                <vueper-slide
-                  v-for="(slide, i) in design.pictures"
-                  :key="i"
-                  :image="slide.img"
-                />
-              </vueper-slides>
-              <div
-                style="width: 100%; display: flex; justify-content: space-between"
-                class="mt-2"
-              >
-                <div>
-                  <div class="title2" style="font-weight: 500;">{{ design.title }}</div>
-                  <span
-                    class="badge mr-2 mb-2"
-                    v-for="tech in design.technologies"
-                    :key="tech"
-                    :class="{ 'bg-dark4': nightMode }"
-                    >{{ tech }}</span
-                  >
-                  •
-                  <span class="date ml-1">{{design.date}}</span>
-                </div>
-
-                <button
-                  style="height: 31px; margin-top: 5px;"
-                  class="btn-sm btn btn-outline-secondary no-outline"
-                  @click.prevent="showDesignModalFn(design)"
-                >
-                  read more
-                </button>
-              </div>
-            </div>
-          </div>
-          <br />
-        </v-tab>
         <v-tab title="development">
-          <br />
-          <div class="row">
-            <div
-              class="col-xl-4 col-bg-4 col-md-6 col-sm-12"
-              v-for="(portfolio, idx) in portfolio_info"
-              :key="portfolio.name"
-            >
-              <Card
-                :style="{ 'transition-delay': (idx % 3) / 4.2 + 's' }"
-                :portfolio="portfolio"
-                @show="showModalFn"
-                data-aos="fade-up"
-                :nightMode="nightMode"
-                data-aos-offset="100"
-                data-aos-delay="10"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="true"
-              />
+          <div class="row py-3">
+            <div class="col-xl-4 col-bg-4 col-md-6 col-sm-12" v-for="(portfolio, idx) in portfolio_info" :key="portfolio.name">
+              <Card :style="{ 'transition-delay': (idx % 3) / 4.2 + 's' }" :portfolio="portfolio" @show="showModalFn" data-aos="fade-up" :nightMode="nightMode" data-aos-offset="100" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" />
             </div>
           </div>
           <div class="text-center py-3" v-if="showBtn !== 'show less'">
@@ -109,22 +27,10 @@
       </vue-tabs>
     </div>
     <transition name="modal">
-      <Modal
-        :showModal="showModal"
-        @close="closeModal"
-        v-if="showModal"
-        :portfolio="modal_info"
-        :nightMode="nightMode"
-      />
+      <Modal :showModal="showModal" @close="closeModal" v-if="showModal" :portfolio="modal_info" :nightMode="nightMode" />
     </transition>
     <transition name="modal">
-      <DesignModal
-        :showModal="showDesignModal"
-        @close="closeModal"
-        v-if="showDesignModal"
-        :portfolio="design_modal_info"
-        :nightMode="nightMode"
-      />
+      <DesignModal :showModal="showDesignModal" @close="closeModal" v-if="showDesignModal" :portfolio="design_modal_info" :nightMode="nightMode" />
     </transition>
   </div>
 </template>
@@ -161,7 +67,6 @@ export default {
   data() {
     return {
       all_info: info.portfolio,
-      desgin_info: info.portfolio_design,
       portfolio_info: [],
       showModal: false,
       showDesignModal: false,
@@ -170,11 +75,7 @@ export default {
       number: 3,
       showBtn: "show more",
       shower: 0,
-      data: [
-        '<div class="example-slide">Slide 1</div>',
-        '<div class="example-slide">Slide 2</div>',
-        '<div class="example-slide">Slide 3</div>',
-      ],
+      data: ['<div class="example-slide">Slide 1</div>', '<div class="example-slide">Slide 2</div>', '<div class="example-slide">Slide 3</div>'],
     };
   },
   created() {
@@ -220,8 +121,7 @@ export default {
           behavior: "smooth",
         });
 
-        if (this.number > this.all_info.length)
-          this.number = this.all_info.length;
+        if (this.number > this.all_info.length) this.number = this.all_info.length;
       }
 
       if (this.number == this.all_info.length && this.shower == 0) {
@@ -381,19 +281,19 @@ export default {
 }
 
 .btn {
-  border-color: #759CC9;
-  color: #759CC9;
+  border-color: #759cc9;
+  color: #759cc9;
 }
 
 .btn:hover {
-  background-color: #759CC9;
-  border-color: #759CC9;
+  background-color: #759cc9;
+  border-color: #759cc9;
   color: white;
 }
 
 .btn:focus {
-  background-color: #759CC9;
-  border-color: #759CC9;
+  background-color: #759cc9;
+  border-color: #759cc9;
   color: white;
 }
 /deep/ .vueperslides__arrow {
@@ -416,6 +316,6 @@ export default {
 .date {
   font-size: 14px;
   font-weight: 400;
-  opacity: 0.75
+  opacity: 0.75;
 }
 </style>

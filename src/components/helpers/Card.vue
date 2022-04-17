@@ -9,48 +9,21 @@
       }"
     >
       <div style="height: 180px;">
-        <img
-          class="card-img-top"
-          :src="portfolio.pictures[0].img"
-          alt="Card image cap"
-        />
+        <img class="card-img-top" :src="portfolio.pictures[0].img" alt="Card image cap" />
       </div>
       <div class="card-body pborder-top">
         <h5 class="title2">{{ portfolio.name }}</h5>
         <div>
-          <div class="pb-1 bheight">
-            <span
-              class="badge mr-2 mb-2 "
-              v-for="tech in portfolio.technologies"
-              :key="tech"
-              :class="{ 'bg-dark4': nightMode }"
-              >{{ tech }}</span
-            >
+          <div class="pb-2 bheight">
+            <span class="badge mr-2" v-for="tech in portfolio.technologies" :key="tech" :class="{ 'bg-dark4': nightMode }">{{ tech }}</span>
           </div>
-          <p
-            class="title3 m-0 pb-2 pheight pt-1"
-            v-html="
-              portfolio.description.length > 100
-                ? portfolio.description.substring(0, 105) + '...'
-                : portfolio.description
-            "
-          >
-          </p>
+          <p class="title3 m-0 pb-2 pheight pt-1" v-html="portfolio.description.length > 100 ? portfolio.description.substring(0, 105) + '...' : portfolio.description"></p>
         </div>
         <div class="text-center mt-2">
-          <button
-            href=""
-            class="btn-sm btn btn-outline-secondary no-outline"
-            @click.prevent="showModal"
-          >
+          <button href="" class="btn-sm btn btn-outline-secondary no-outline" @click.prevent="showModal">
             read more
           </button>
-          <button
-            href="#"
-            class="btn-sm btn btn-outline-secondary no-outline ml-4"
-            v-if="portfolio.visit"
-            @click.prevent="open(portfolio.visit)"
-          >
+          <button href="#" class="btn-sm btn btn-outline-secondary no-outline ml-4" v-if="portfolio.visit" @click.prevent="open(portfolio.visit)">
             visit website
           </button>
         </div>
@@ -101,7 +74,6 @@ img {
 }
 
 .bheight {
-  height: 65px;
   overflow: auto;
 }
 
@@ -184,19 +156,19 @@ div.img-div {
 }
 
 .btn {
-  border-color: #759CC9;
-  color: #759CC9;
+  border-color: #759cc9;
+  color: #759cc9;
 }
 
 .btn:hover {
-  background-color: #759CC9;
-  border-color: #759CC9;
+  background-color: #759cc9;
+  border-color: #759cc9;
   color: white;
 }
 
 .btn:focus {
-  background-color: #759CC9;
-  border-color: #759CC9;
+  background-color: #759cc9;
+  border-color: #759cc9;
   color: white;
 }
 

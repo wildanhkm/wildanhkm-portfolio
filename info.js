@@ -39,7 +39,7 @@ let info = {
       place: "Indonesia",
       date: "Jan, 2021 - Dec, 2021",
       position: "Frontend Developer",
-      description: "creating apps and web UI, Creating Interactive prototypes, Low fidelity and UX researches",
+      description: "Creating apps and web UI, creating interactive components, and frontend technology research",
       skills: ["HTML5", "CSS3", "Javascript", "Illustrator"],
     },
     {
@@ -47,7 +47,7 @@ let info = {
       place: "Cirebon, Indonesia",
       date: "Nov 2020 - Jan 2021",
       position: "Full Stack Web Developer",
-      description: "Developeing and maintaining 4 websites",
+      description: "Developing, maintaining, and creating interactive websites using Laravel",
       skills: ["Javascript", "Laravel", "Bootstrap", "jQuery", "webpack", "Git"],
     },
   ],
@@ -73,78 +73,95 @@ let info = {
       icon: "fas fa-search",
     },
   ],
-  // portfolio: [
-  //   {
-  //     name: "Diary App",
-  //     pictures: [
-  //       {
-  //         img: require("./src/assets/portfolio/diary/1.png"),
-  //       },
-  //       {
-  //         img: require("./src/assets/portfolio/diary/2.png"),
-  //       },
-  //       {
-  //         img: require("./src/assets/portfolio/diary/3.png"),
-  //       },
-  //     ],
-  //     technologies: ["react", "scss", "local storage"],
-  //     category: "Web App",
-  //     date: "Aug, 2021 - 20 days",
-  //     github: "https://github.com/mahy209/notes-react-app.git",
-  //     visit: "https://github.com/mahy209/notes-react-app.git",
-  //     description: " Diary react app with some new features: Dark mode, upload images, tags, filter search with title/content/tag ",
-  //   },
-  //   {
-  //     name: "Online Examination",
-  //     pictures: [
-  //       {
-  //         img: require("./src/assets/portfolio/online examination/exam (1).png"),
-  //       },
-  //       {
-  //         img: require("./src/assets/portfolio/online examination/exam (2).png"),
-  //       },
-  //       {
-  //         img: require("./src/assets/portfolio/online examination/exam (3).png"),
-  //       },
-  //       {
-  //         img: require("./src/assets/portfolio/online examination/exam (4).png"),
-  //       },
-  //       {
-  //         img: require("./src/assets/portfolio/online examination/exam (5).png"),
-  //       },
-  //     ],
-  //     technologies: ["HTML", "CSS", "JavaSript", "JQuery", "PHP", "MySQL"],
-  //     category: "Web App",
-  //     date: "Apr, 2021 - May, 2021",
-  //     github: "https://github.com/mahy209/online-examination.git",
-  //     visit: "https://github.com/mahy209/online-examination.git",
-  //     description:
-  //       "Online Examination System Today Online Examination System has become a fast growing examination method because of its speed and accuracy. It is also needed less manpower to execute the examination. Almost all organizations now-a-days, are conducting their objective exams by online examination system, it saves students time in examinations. Organizations can also easily check the performance of the student that they give in an examination. As a result of this, organizations are releasing results in less time. It also helps the environment by saving paper. According to today’s requirement, online examination project in php is very useful to learn it. What is an online examination system? In an online examination system examine get their user id and password with his/her admit card. This id is already saved in the examination server. When examine login to the server he/she get his/her profile already register. On the certain time examine gets the message to start the examination. All answers given by examine are saved into the server with his/her profile information. Online examination system also allows to correct the answer if the examine needed to change any answer in the examination time duration, however, after the time duration any change will not allow. This also makes c checking the answer easy and error proof as computers are more accurate than man and provide fast results too. Php is a web base language so we can create an online examination system in PHP. Administrator of Online Examination has multiple features such as Add, Delete, Update Topics and Question. To Login as Admin put inside your browser.",
-  //   },
-  //   {
-  //     name: "MyFlix.com",
-  //     pictures: [
-  //       {
-  //         img: require("./src/assets/portfolio/myflix.com/1.png"),
-  //       },
-  //       {
-  //         img: require("./src/assets/portfolio/myflix.com/2.png"),
-  //       },
-  //       {
-  //         img: require("./src/assets/portfolio/myflix.com/3.png"),
-  //       },
-  //       {
-  //         img: require("./src/assets/portfolio/myflix.com/4.png"),
-  //       },
-  //     ],
-  //     technologies: ["react", "css", "TMDB"],
-  //     category: "Web App",
-  //     date: "Aug, 2021 - 10 days",
-  //     github: "https://github.com/mahy209/MyFlix-react-app.git",
-  //     visit: "https://github.com/mahy209/MyFlix-react-app.git",
-  //     description: " flix.com is a netflix clone using React JS and TMDB with courusal and search engine. ",
-  //   },
-  // ],
+  portfolio: [
+    {
+      name: "cmlabs Analytics 3.0",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/v3/under-construction.png"),
+        },
+      ],
+      technologies: ["Nuxt", "Vuex", "Git", "Tailwind", "GCP", "gRPC", "REST API"],
+      category: "Web App",
+      date: "Mar, 2022 - Present",
+      description: "SEO analytic tools built with NuxtJS, Vuex, Tailwind, GCP, gRPC, and REST API",
+    },
+    {
+      name: "prospeku.com SEO Improvement",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/prospeku/prospeku.jpeg"),
+        },
+      ],
+      technologies: ["React", "LESS", "Git", "Nginx", "Azure"],
+      category: "Web App",
+      date: "Dec, 2021 - Mar, 2022",
+      visit: "https://prospeku.com",
+      description: "SEO improvement for prospeku.com, a website for finding houses, apartments, offices, and other commercial properties in Indonesia. The website is developed using React, Node, and Nginx. The website is hosted on Azure, and the website is optimized using Core Web Vitals.",
+    },
+    {
+      name: "cmlabs.co Revamp",
+      pictures: [
+        {
+          img: require("./src/assets/portfolio/cmlabs-revamp/homepage.jpeg"),
+        },
+        {
+          img: require("./src/assets/portfolio/cmlabs-revamp/blog.jpeg"),
+        },
+        {
+          img: require("./src/assets/portfolio/cmlabs-revamp/demo.jpeg"),
+        },
+      ],
+      technologies: ["HTML", "CSS", "JavaSript", "Bootstrap 5", "Laravel", "MySQL", "Git"],
+      category: "Web App",
+      date: "Sep, 2021 - Dec, 2021",
+      visit: "https://cmlabs.co/en-id",
+      description: "Revamp main website of cmlabs.co using Laravel, HTML, CSS, Bootstrap 5, Git, and MySQL",
+    },
+    //   {
+    //     name: "NuxtFlix.com",
+    //     pictures: [
+    //       {
+    //         img: require("./src/assets/portfolio/myflix.com/1.png"),
+    //       },
+    //       {
+    //         img: require("./src/assets/portfolio/myflix.com/2.png"),
+    //       },
+    //       {
+    //         img: require("./src/assets/portfolio/myflix.com/3.png"),
+    //       },
+    //       {
+    //         img: require("./src/assets/portfolio/myflix.com/4.png"),
+    //       },
+    //     ],
+    //     technologies: ["Nuxt", "Css", "TMDB", "Heroku"],
+    //     category: "Web App",
+    //     date: "Mar, 2022 - 10 days",
+    //     github: "https://github.com/mahy209/MyFlix-react-app.git",
+    //     visit: "https://github.com/mahy209/MyFlix-react-app.git",
+    //     description: "Nuxtflix.com is a movie search app built with NuxtJS and TMDB with search feature. Hosted on Heroku",
+    //   },
+    //   {
+    //     name: "Todo App",
+    //     pictures: [
+    //       {
+    //         img: require("./src/assets/portfolio/diary/1.png"),
+    //       },
+    //       {
+    //         img: require("./src/assets/portfolio/diary/2.png"),
+    //       },
+    //       {
+    //         img: require("./src/assets/portfolio/diary/3.png"),
+    //       },
+    //     ],
+    //     technologies: ["vue", "vuex", "local storage"],
+    //     category: "Web App",
+    //     date: "Feb, 2022 - 10 days",
+    //     github: "https://github.com/mahy209/notes-react-app.git",
+    //     visit: "https://github.com/mahy209/notes-react-app.git",
+    //     description: " Todo app built with VueJS, Vuex, and Local Storage ",
+    //   },
+  ],
 };
 
 export default info;
